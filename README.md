@@ -24,8 +24,8 @@ This is a basic multithreaded HTTP server written in Python using sockets and a 
 3. The connection is passed to the thread pool for processing.
 4. Each thread:
    - Reads the request.
-   - Waits for 10 seconds (simulating processing time).
-   - Sends back a `Hello World!` response.
+   - Uses Routes to determine file path
+   - Sends back a file data with appropriate MIME TYPE response.
    - Closes the connection.
 
 ---
